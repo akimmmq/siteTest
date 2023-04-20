@@ -1,0 +1,27 @@
+.at_ext-form select {
+    cursor: pointer;
+}
+
+.at_ext-form select.at_ext-input-type-residency {
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position-x: right;
+    background-size: contain;
+    padding-right: 1.5rem;
+    /*padding-left: 3rem;*/
+}
+
+.at_ext-form-adult {
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 992px) {
+    .at_ext-content-margin {
+        margin: 0 1rem;
+    }
+
+    #at_ext-form-government-info .at_ext-form-input-element {
+        display: inline-block;
+        width: 50%;
+    }
+}

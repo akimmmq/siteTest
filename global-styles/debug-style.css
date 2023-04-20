@@ -1,0 +1,33 @@
+body {
+    font-family: Nunito;
+}
+
+.demidov-debug-indicator {
+    display: inline-block;
+    box-sizing: border-box;
+    position: fixed;
+
+    padding: 0.5rem;
+
+    top: 0%;
+    left: 100%;
+    transform: translate(-110%, 10%);
+
+    border-radius: 13px;
+
+    background-color: red!important;
+    color: whitesmoke;
+
+    opacity: 0%;
+
+    z-index: 999999999;
+}
+
+header {
+    background-color: #FFC763!important;
+}
+
+.entry-header {
+    padding-top: 12rem!important;
+    padding-bottom: 2rem!important;
+}

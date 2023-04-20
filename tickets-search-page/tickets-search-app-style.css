@@ -1,0 +1,663 @@
+#at_ext-input-passenger-amount {
+    display: inline-block;
+    text-align: center;
+    font-size: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 1200px) and (max-width: 1269px) {
+    #at_ext-input-passenger-amount wrapper {
+        font-size: 0.5rem;
+    }
+}
+
+#at_ext-input-passenger-amount span {
+    display: inline-block;
+    cursor: pointer;
+
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: var(--default-border-r);
+
+    margin: 0 0.5rem;
+}
+
+#at_ext-input-passenger-amount span:hover {
+    background-color: var(--accent-color);
+}
+
+#at_ext-ticket-search-bar form {
+    /*display: flex;*/
+
+}
+
+#at_ext-ticket-search-bar input:not([value=""]),
+#at_ext-ticket-search-bar .input>#at_ext-passengersAmount {
+    color: black;
+}
+
+#at_ext-ticket-search-bar .input>#at_ext-passengersAmount {
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+#at_ext-ticket-search-bar input
+{
+    /*margin: 0 1rem;*/
+    color: inherit;
+
+    transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+}
+
+#at_ext-ticket-search-bar input:focus {
+    outline: var(--accent-color) solid 2px;
+}
+
+#at_ext-ticket-search-bar input:hover,
+#at_ext-ticket-search-bar .input:hover
+{
+    color: black;
+
+    transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+}
+
+.at_ext-input-tp-passengers-amount-c-vis {
+    opacity: 1;
+    /*margin: 0 0.2rem;*/
+
+    /*color: black;*/
+    background-color: lightgray;
+
+    transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+}
+
+.at_ext-input-tp-passengers-amount-c-invis {
+    opacity: 0.7;
+    /*margin: 0;*/
+
+    transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+}
+
+#at_ext-tickets-search-inputs>div {
+    padding: 0.2rem 0;
+}
+
+@media(max-width: 1199px) {
+    #at_ext-tickets-search-inputs>div {
+        padding: 0.2rem 0.2rem;
+    }
+}
+
+.at_ext-form-tickets-date-selector {
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#at_ext-calendar-icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0.8rem;
+    cursor: pointer;
+
+    transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+}
+
+#at_ext-calendar-icon:hover {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0.7rem;
+    cursor: pointer;
+
+    transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+}
+
+/* LEFT-CENTER-RIGHT inputs styling */
+
+@media(min-width: 1200px) {
+    #at_ext-input-passenger-amount {
+        margin-left: 0.2rem;
+    }
+
+    .at_ext-tickets-search-input-l {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+
+    .at_ext-tickets-search-input-c {
+        padding-left: 0.2rem!important;
+        padding-right: 0.2rem!important;
+    }
+
+    .at_ext-tickets-search-input-r {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+
+    .at_ext-tickets-search-input-l input,
+    .at_ext-tickets-search-input-l .input {
+        border-radius: var(--default-border-r) 0 0 var(--default-border-r)!important;
+    }
+
+    .at_ext-tickets-search-input-c input,
+    .at_ext-tickets-search-input-c .input  {
+        border-radius: 0!important;
+    }
+
+    .at_ext-tickets-search-input-r input,
+    .at_ext-tickets-search-input-r .input  {
+        border-radius: 0 var(--default-border-r) var(--default-border-r) 0!important;
+    }
+}
+
+/* ================================ */
+
+.at_ext-form input[type="submit"] {
+    line-height: 100%;
+    width: 100%;
+
+    font-size: 1rem;
+
+    transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+}
+
+/*.at_ext-form input[type="submit"]:hover {*/
+/*    color: whitesmoke;*/
+
+/*    transition: .3s;*/
+/*    -webkit-transition: .3s;*/
+/*    -o-transition: .3s;*/
+/*    -ms-transition: .3s;*/
+/*    -moz-transition: .3s;*/
+/*}*/
+
+#at_ext-tickets-search-input-calendar-dropdown {
+    height: 10rem;
+}
+
+#at_ext-tickets-search-input-calendar-dropdown h4 {
+    margin-bottom: 0.5rem;
+}
+
+#at_ext-tickets-search-input-calendar-dropdown input[type="date"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    cursor: pointer;
+    padding: 0.3rem;
+
+    border-width:  1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: var(--default-border-r);
+
+    transition: .2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+}
+
+#at_ext-tickets-search-input-calendar-dropdown input[type="date"]:hover {
+    border-width: 2px;
+    color: black;
+
+    transition: .2s;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    -ms-transition: .2s;
+    -moz-transition: .2s;
+}
+
+#at_ext-tickets-search-input-calendar-dropdown button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+
+    background-color: var(--accent-color);
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--default-border-r);
+
+    margin: 0.8rem;
+}
+
+.at_ext-form input[type="date"]:not(.has-value) {
+    border-style: dashed !important;
+}
+
+/* Overriding default styling */
+@media (min-width: 992px) {
+    .at_ext-content-margin {
+        margin: 0 !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .at_ext-form input[type="submit"] {
+        margin-left: 10%;
+        width: 90%;
+    }
+}
+/* ========================== */
+
+/* Suggestions: */
+#at_ext-tickets-suggestions {
+    margin: 7rem 0;
+}
+
+.at_ext-tickets-suggestion {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    /* height: 10vw; */
+    max-width: 250px;
+    height: 60vw;
+    max-height: 350px;
+
+    margin-bottom: 1rem;
+
+    background-size: 105%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 1rem;
+
+    transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+}
+
+.at_ext-tickets-suggestion:hover {
+    background-size: 113%;
+    background-position: center;
+
+    cursor: pointer;
+
+    transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+}
+
+.at_ext-tickets-suggestion h4 {
+    margin: 0;
+    padding: 1rem;
+
+    width: 100%;
+
+    color: white;
+    background-color: rgba(200, 200, 200, 0.64);
+
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+/* ============ */
+
+/* Search results */
+#at_ext-tickets-search-results {
+    margin-top: 2rem;
+}
+
+.at_ext-ticket {
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.at_ext-ticket-sticker {
+    position: absolute;
+    border-radius: var(--default-border-r);
+
+    color: white;
+    font-weight: bold;
+
+    margin-left: 1rem;
+    transform: translateY(-50%);
+
+    padding: 0.2rem 0.5rem;
+}
+
+.at_ext-cheapest-ticket-sticker {
+    background-color: var(--accent-blue);
+}
+
+.at_ext-fastest-ticket-sticker {
+    background-color: var(--accent-purple);
+}
+
+.at_ext-ticket-col-l {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    border-right: lightgray solid 1px;
+}
+
+.at_ext-ticket-transits-info-top {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.at_ext-ticket h1,
+.at_ext-ticket h2,
+.at_ext-ticket h3,
+.at_ext-ticket h4 {
+    margin: 0;
+}
+
+.at_ext-ticket-luggage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    background-color: white;
+    border-radius: var(--default-border-r);
+
+    color: black;
+    font-weight: bold;
+
+    transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+}
+
+.at_ext-ticket-luggage-inc {
+    background-color: var(--accent-color);
+
+    transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+}
+
+.at_ext-luggage-checkbox {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    color: black
+}
+
+.at_ext-ticket-luggage .at_ext-luggage-checkbox {
+    color: var(--accent-color);
+}
+
+.at_ext-ticket-luggage-inc .at_ext-luggage-checkbox {
+    color: black;
+}
+
+.at_ext-ticket-exchanges-list {
+    color: black;
+}
+
+.at_ext-ticket-col-r {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* top: 50%; */
+    transform: translateY(50%);
+}
+
+.at_ext-ticket-col-r div {
+    text-align: center;
+    width: 30%;
+}
+
+.at_ext-ticket-flight-duration {
+    border-bottom: solid var(--accent-color) 2px;
+}
+
+@media (max-width: 991px) {
+    .at_ext-ticket>div {
+        display: flex !important;
+        flex-direction: column-reverse;
+    }
+
+    .at_ext-ticket-col-l {
+        border-right: none;
+        /* transform: translateY(25%); */
+    }
+
+    .at_ext-ticket-luggage {
+        /* display: block; */
+    }
+
+    .at_ext-ticket-price {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        padding-left: var(--default-border-r);
+        padding-right: var(--default-border-r);
+    }
+
+    .at_ext-ticket-transits-info-top {
+        visibility: visible;
+        width: auto;
+        height: auto;
+    }
+
+    .at_ext-ticket-transits-info-bottom {
+        visibility: hidden;
+        height: 0;
+    }
+
+    .at_ext-ticket-col-r {
+        /* display: block; */
+        /*justify-content: space-evenly;*/
+        /*align-items: center;*/
+
+        border-left: none;
+        border-bottom: lightgray solid 1px;
+    }
+
+    .at_ext-ticket-col-r {
+        transform: translateY(0);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .at_ext-ticket-col-r div {
+        text-align: center;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        width: 100%;
+    }
+
+    .at_ext-ticket-flight-duration {
+        /* border: solid var(--accent-color) 0.2rem;
+        border-radius: var(--default-border-r); */
+
+        color: black;
+        font-weight: bold;
+        font-size: 0.7rem;
+
+        padding: 0 !important;
+        margin: 0.7rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #at_ext-tickets-list {
+        padding-right: 0;
+    }
+}
+/* ============== */
+
+
+/* Filters */
+#at_ext-tickets-search-filters {
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+    #at_ext-tickets-search-filters {
+        padding: 0;
+    }
+
+    .at_ext-ticket-sticky-filters {
+        position: fixed;
+        top: 30px;
+        width: 323.3px;
+    }
+
+    .at_ext-ticket-non-sticky-filters {
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (min-width: 1270px) {
+    .at_ext-ticket-sticky-filters {
+        width: 413.3px;
+    }
+}
+
+#at_ext-filters-content>div {
+    padding: 0.8rem 1.5rem!important;
+}
+
+#at_ext-filters-content strong {
+    padding: 0!important;
+    color: black;
+}
+
+#at_ext-filters-content input[type="range"] {
+    accent-color: var(--accent-color);
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+
+    border: none;
+    outline: none;
+
+    margin-top: 0.8rem;
+    margin-bottom: 0.5rem;
+
+    cursor: pointer;
+}
+
+#at_ext-filters-content input[type="range"]::-webkit-slider-runnable-track {
+    background-color: var(--accent-color);
+    height: 2px;
+}
+
+#at_ext-filters-content input[type="range"]::-moz-range-track {
+    background-color: var(--accent-color);
+    height: 2px;
+}
+
+#at_ext-filters-content input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -0.6rem;
+    background-color: var(--custom-gray);
+    height: 1.2rem;
+    width: 1.2rem;
+
+    border: solid var(--accent-color) 2px;
+    border-radius: 50%;
+}
+
+.at_ext-tickets-search-filters-top {
+    border-bottom-left-radius: 0!important;
+    border-bottom-right-radius: 0!important;;
+}
+
+.at_ext-tickets-search-filters-center {
+    border-radius: 0!important;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.at_ext-tickets-search-filters-bottom {
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important;
+}
+
+.at_ext-filter-label {
+    margin-left: 0.5rem;
+}
+
+.at_ext-filters-button {
+    visibility: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+
+    width: 100%;
+    padding: 1rem;
+    transform: translateX(-50%);
+
+    color: black;
+    font-weight: bold;
+    background-color: var(--accent-color);
+
+    /* border-radius: var(--default-border-r); */
+    border: none;
+}
+
+@media (max-width: 991px) {
+    .at_ext-filters-button {
+        visibility: visible;
+        z-index: 10000;
+    }
+
+    .back-to-top {
+        visibility: hidden;
+    }
+}
+/* ======= */
